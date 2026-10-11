@@ -2,7 +2,7 @@
   description = "Nix flake for tg-ws-proxy (local SOCKS5 proxy for Telegram)";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
     tg-ws-proxy-src = {
       url = "github:Flowseal/tg-ws-proxy";
