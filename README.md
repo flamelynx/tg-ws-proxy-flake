@@ -11,7 +11,7 @@ Desktop.
 Запуск прокси:
 
 ```bash
-nix run github:pialtor/tg-ws-proxy-flake -- --port 1080
+nix run github:flamelynx/tg-ws-proxy-flake -- --port 1080
 ```
 
 Прокси запустится на 127.0.0.1:1080
@@ -21,13 +21,13 @@ SECRET для MTPROTO будет в терминале.
 ## Другой порт или слушать на всех интерфейсах
 
 ```bash
-nix run github:pialtor/tg-ws-proxy-flake -- --port 8080 --host 0.0.0.0
+nix run github:flamelynx/tg-ws-proxy-flake -- --port 8080 --host 0.0.0.0
 ```
 
 ## Посмотреть все возможные параметры
 
 ```bash
-nix run github:pialtor/tg-ws-proxy-flake -- --help
+nix run github:flamelynx/tg-ws-proxy-flake -- --help
 ```
 
 ## Использование как input в своём flake.nix
@@ -36,7 +36,7 @@ nix run github:pialtor/tg-ws-proxy-flake -- --help
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    tg-ws-proxy.url = "github:pialtor/tg-ws-proxy-flake";
+    tg-ws-proxy.url = "github:flamelynx/tg-ws-proxy-flake";
   };
 
   outputs = { self, nixpkgs, tg-ws-proxy, ... }:
